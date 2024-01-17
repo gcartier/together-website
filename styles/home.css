@@ -1,0 +1,206 @@
+.hero-intro {
+  grid-area: hero-intro;
+  margin-top: 18px;
+  margin-bottom: 18px;
+  color: #cde;
+  text-align: left;
+  padding: 20px;
+  font-family: Indie Flower, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 22px;
+  vertical-align: baseline;
+}
+
+.how-it-works {
+  grid-area: how-it-works;
+}
+
+.why-it-is {
+  grid-area: why-it-is;
+}
+
+.who-we-are {
+  grid-area: who-we-are;
+}
+
+.how-more {
+  display: none;
+}
+
+.why-more {
+  display: none;
+}
+
+.who-more {
+  display: none;
+}
+
+.articles {
+  display: grid;
+  grid-column-gap: 30px;
+  grid-auto-rows: max-content;
+  padding-top: 40px;
+  font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "how-it-works"
+                       "why-it-is"
+                       "who-we-are";
+}
+
+.articles .text {
+  display: none;
+}
+
+.articles .title {
+  margin: 40px 0px 0px 0px;
+  font-size: 21;
+  padding: 0px;
+  line-height: 1.15;
+  page-break-after: avoid;
+  text-align: left
+}
+
+a.a-black {
+  font-weight: 200;
+  color: #1155cc;
+}
+
+.articles p {
+  padding-top: 0px;
+}
+
+.hero {
+  background-image: url("../images/oasis_banner.png");
+  display: grid;
+  align-items: start;
+  grid-template-rows: 20px max-content max-content 20px max-content;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "....."
+    "h1-tog"
+    "h1-lets"
+    "....."
+    "hero-intro";
+}
+
+.h1-tog {
+  grid-area: h1-tog;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #def;
+  font-size: 40px;
+  font-weight: 100;
+  text-align: center;
+  font-family: Roboto Condensed, sans-serif;
+}
+
+.h1-lets {
+  grid-area: h1-lets;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #def;
+  font-size: 40px;
+  font-weight: 100;
+  text-align: center;
+  font-family: Roboto Condensed, sans-serif;
+}
+
+@media (min-width: 640px) {
+
+a.a-black {
+  color: black;
+  font-weight: 600;
+}
+
+  .hero {
+    grid-column-gap: 20px;
+    grid-template-columns: max-content max-content min-content;
+    grid-template-rows: 80px max-content max-content 10px max-content;
+    grid-template-areas:
+      "....   .... ...."
+      "h1-tog .... ...."
+      "h1-lets h1-lets h1-lets"
+      "....   .... ...."
+      "hero-intro hero-intro ....";
+  }
+
+  .h1-tog {
+    padding-left: 20px;
+    font-size: 48px;
+    font-weight: 200;
+    text-align: left;
+    font-family: Roboto Condensed, sans-serif;
+  }
+
+  .h1-lets {
+    padding-left: 20px;
+    font-size: 48px;
+    font-weight: 200;
+    text-align: left;
+    font-family: Roboto Condensed, sans-serif;
+  }
+
+.how-more {
+  display: grid;
+  grid-area: how-more;
+}
+
+.why-more {
+  display: grid;
+  grid-area: why-more;
+}
+
+.who-more {
+  display: grid;
+  grid-area: who-more;
+}
+
+.articles {
+  grid-column-gap: 30px;
+  grid-template-areas: "how-it-works"
+                       "how-more"
+                       "why-it-is"
+                       "why-more"
+                       "who-we-are"
+                       "who-more";
+}
+
+
+.articles .text {
+  display: grid;
+}
+
+}
+
+@media (min-width: 1200px) {
+
+.articles {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "how-it-works why-it-is who-we-are"
+    "how-more why-more who-more";
+}
+
+
+  .hero {
+    grid-template-columns: max-content max-content min-content;
+    grid-template-rows: 80px max-content 10px max-content 10px;
+    grid-template-areas:
+      "....   .... ...."
+      "h1-tog h1-lets h1-lets"
+      "....   .... ...."
+      "hero-intro hero-intro ...."
+      "....   .... ....";
+  }
+
+  .h1-tog {
+    font-size: 60px;
+    text-align: right;
+  }
+
+  .h1-lets {
+    font-size: 60px;
+  }
+
+}

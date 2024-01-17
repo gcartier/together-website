@@ -1,0 +1,140 @@
+.why-grid {
+  display: grid;
+  margin: 0px 5px 5px 0px;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    'why-intro'
+    'circle-figure'
+    'gath-h3'
+    'gath-intro'
+    'circle-intro'
+    'join-explained'
+    'icons-intro'
+    'icon-list-grid'
+    'video-options'
+    'audio-options'
+    'chat-explained'
+    'the-rest';
+}
+
+.why-intro {
+  grid-area: why-intro;
+}
+
+.gath-h3 {
+  grid-area: gath-h3;
+}
+
+.circle-figure {
+  grid-area: circle-figure;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.circle-figure figcaption {
+  padding-top: 20px;
+  font-style: italic;
+}
+
+.gath-intro {
+  grid-area: gath-intro;
+}
+
+.golden-symbol {
+  justify-self: left;
+}
+
+.name-pic {
+  justify-self: end;
+}
+
+.circle-intro {
+  grid-area: circle-intro;
+}
+
+.join-explained {
+  grid-area: join-explained;
+  justify-content: start;
+}
+
+.create-circle-pic {
+  grid-area: create-circle-pic;
+}
+
+.people-pic {
+  grid-area: people-pic;
+}
+
+.chat-pic {
+  grid-area: chat-pic;
+}
+
+.chat-explained {
+  grid-area: chat-explained;
+}
+
+.icons-intro {
+  grid-area: icons-intro;
+}
+
+.icon-list-grid {
+  grid-area: icon-list-grid;
+  padding-top: 0px;
+  padding-bottom: 20px;
+  display: grid;
+  grid-column-gap: 30px;
+  grid-template-columns: 50px 1fr;
+  grid-template-rows: auto;
+}
+
+.icon-list-grid img {
+  padding-top: 0px;
+  justify-self: center;
+}
+
+.icon-list-grid p {
+  margin-top: 0;
+  padding-top: 0px;
+  vertical-align: top;
+}
+
+.list-space {
+  padding-top: 30px;
+}
+
+.video-options {
+  grid-area: video-options;
+}
+
+.audio-options {
+  grid-area: audio-options;
+}
+
+.the-rest {
+  grid-area: the-rest;
+}
+
+.top-icons-grid {
+  margin-top: 30px;
+  grid-area: top-icons-grid;
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  margin-bottom: 50px;
+  background: black;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+@media (min-width: 640px) {
+  .why-grid {
+    grid-row-gap: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .why-grid {
+    margin-left: 180px;
+    grid-template-columns: 750px;
+  }
+}

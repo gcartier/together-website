@@ -1,0 +1,115 @@
+.p {
+  vertical-align: baseline;
+  padding-top: 18px;
+  padding-bottom: 0px;
+  line-height: 1.5;
+  orphans: 2;
+  widows: 2;
+  text-align: left;
+  font-weight: 400;
+  font-style: normal
+}
+
+.news-item {
+  padding-top: 30px;
+  padding-bottom: 0px;
+}
+
+.news-para {
+  padding-top: 0px;
+  padding-bottom: 12px;
+}
+
+.h3 {
+  margin: 40px 0px -20px 0px;
+  padding: 0px;
+  line-height: 1.15;
+  page-break-after: avoid;
+  orphans: 2;
+  widows: 2;
+  text-align: left
+}
+
+.image {
+  padding-top: 18px;
+  padding-bottom: 22px;
+}
+
+.shadow_image {
+  padding-top: 10px;
+  padding-bottom: 0px;
+  margin: 0px 0px -20px 0px;
+}
+
+.link {
+  color: #1155cc;
+  text-decoration: underline
+}
+
+.list {
+  padding-top: 10px;
+  padding-bottom: 0px;
+  list-style-position: outside;
+}
+
+.item {
+  line-height: 1.5;
+}
+
+.body {
+  background-color: white;
+  padding: 36pt 72pt 36pt 72pt color: black;
+  font-weight: 400;
+  font-size: 18px;
+  font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+}
+
+.intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "intro-1 intro-1"
+    "choose-mac choose-windows";
+}
+
+.install-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "title"
+    "install";
+}
+
+.intro-1 {
+  grid-area: intro-1
+}
+
+.choose-windows {
+  grid-area: choose-windows;
+}
+
+.choose-mac {
+  grid-area: choose-mac;
+}
+
+.title {
+  grid-area: title;
+}
+
+.install {
+  grid-area: install;
+}
+
+@media (min-width: 640px) {
+  .intro-grid {
+    grid-template-columns: 150px 300px 400px;
+    ;
+    grid-template-areas: ". intro-1 intro-1"
+      ". choose-mac choose-windows";
+  }
+
+  .install-grid {
+    grid-template-columns: 150px 700px;
+    grid-template-areas: ". title"
+      ". install";
+  }
+}

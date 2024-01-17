@@ -1,0 +1,91 @@
+<html>
+
+<head>
+  <title>What's New</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/green_sphere.ico" />
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto|Roboto+Condensed&display=swap" rel="stylesheet">
+  <link href="../styles/common.css" rel="stylesheet">
+  <link href="../styles/linear.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="header">
+    <div class="logo">
+      <a href="../index.html" class="nav-link">
+        <img alt="green sphere icon" src="../images/green_icon.png" height="32" /></a>
+    </div>
+    <!--logo-->
+    <div class="links">
+      <a href="what_is_together.html" class="nav-link">What is Together</a>
+      <a class="nav-link">What's New</a>
+      <a href="contact.html" class="nav-link">Contact Us</a>
+      <a href="installing.html" class="nav-link">Install</a>
+    </div>
+    <!--links-->
+  </div>
+  <div class="intro-grid">
+    <div class="intro-1">
+      <h1 class="h1">What's New</h1>
+      <h2 class="news-item">April 14 2022</h2>
+      <p class="news-para">
+       We now have Persistent Circles. You can create a Circle in advance to let
+       people know when they should join you. Or you can leave a recurring Circle
+       in place.
+      </p>
+      <h2 class="news-item">April 13 2022</h2>
+      <p class="news-para">
+       Together version 1.0 is out. It has been a long road and we are very happy.
+      </p>
+      <h2 class="news-item">Oct 3 2021</h2>
+      <p class="news-para">
+       A new version of Together Test is ready for people to use.
+       It is beautiful and robust and has no bugs that we know of. I just sent out
+       a message to the Togethersphere Users Facebook group
+       inviting people to come in and try it out.
+      </p>
+      <h2 class="news-item">Feb 7 2021</h2>
+      <p class="news-para">
+        To begin with, this website is new. It is incomplete in both content and formatting,
+        so as they always say "bear with us". It has been mentioned to me that some web
+        browsers bring up scary warnings when people try to look at it. I do intend
+        to convert it to https, which should make those warnings go away,
+        but I don't feel like doing that right now. Meanwhile, be assured that
+        nobody is asking you for any passwords or information of any kind.</p>
+      <p class="news-para">
+        For some time now we have been thinking that Together is ready for early release,
+        which we call "Version 0". And day after day, week after week, we discover that
+        there is still "one last thing" that needs fixing. Right now we have several
+        people who live in various parts of the world trying to install and run Together on
+        their Mac or Windows computers. We've had some success and found some more
+        problems to fix. So not ready for full release today.</p>
+      <p class="news-para">
+        Guillaume is sitting beside me, migrating all of our Windows libraries from MINGW to
+        MSVC. It is a painful process, but a couple of Windows
+        install failures revealed to us that this pain is necessary.</p>
+      <p class="news-para">
+        Guillaume just finished adding the <a href="https://jmvalin.ca/demo/rnnoise">
+          RNNoise</a> neural denoiser to microphone input in Together.
+        A denoiser takes the audio from your microphone and applies a filter to remove
+        background noises. If you are calling from a noisy environment like a coffee
+        shop, then the denoiser has a lot of work to do. There is a trade-off between
+        the amount of background noise removed and the quality of your voice that remains.
+        So if you call from a really noisy coffee shop we might be able to filter out the clinking
+        and banging and general hubbub, but your voice will sound flat and even garbled as a result.
+        A Quebec researcher named Jean-Marc Valin created a new, smarter denoiser that
+        trains artificial intelligence to discriminate between background noise and the
+        human voice. We've been testing it for a year now and found
+        that it does an incredibly good job in a coffee shop. We also found that it
+        does flatten the voice a bit, so we decided to use a more conventional denoiser
+        from WebRTC. The WebRTC denoiser leaves the voice sounding rich and beautiful,
+        but doesn't remove a lot. And now, with this latest addition, you can use
+        WebRTC denoising for a normal call in a quiet room and choose an option to add
+        the aggressive denoising of RNNoise only if you need it.
+      </p>
+      <p><i>by Barbara Samson</i></p>
+    </div>
+  </div>
+</body>
+
+</html>

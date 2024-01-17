@@ -1,0 +1,83 @@
+.who-grid {
+  display: grid;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "who-we-are"
+    "g-pic"
+    "g-bio"
+    "b-pic"
+    "b-bio"
+    "meeting-coffee"
+    "coffee-img"
+    "the-rest";
+}
+
+.who-we-are {
+  grid-area: who-we-are;
+}
+
+.g-bio {
+  grid-area: g-bio;
+}
+
+.b-bio {
+  grid-area: b-bio;
+}
+
+.g-pic {
+  grid-area: g-pic;
+}
+
+.b-pic {
+  grid-area: b-pic;
+}
+
+.the-rest {
+  grid-area: the-rest;
+}
+
+@media (min-width: 640px) {
+  .who-grid {
+    grid-template-columns: 150px 1fr 1fr minmax(200px,
+        1fr) 150px;
+    grid-template-areas: ". who-we-are who-we-are who-we-are ."
+      ". meeting-coffee meeting-coffee coffee-img ."
+      ". the-rest    the-rest   the-rest ."
+      ". g-bio b-bio . ."
+      ". g-pic b-pic . .";
+  }
+
+  .g-bio {
+    grid-area: g-bio;
+  }
+
+  .b-bio {
+    grid-area: b-bio;
+  }
+
+  .g-pic {
+    grid-area:
+      g-pic;
+  }
+
+  .b-pic {
+    grid-area: b-pic;
+  }
+
+  .the-rest {
+    grid-area: the-rest;
+  }
+
+  .meeting-coffee {
+    grid-area: meeting-coffee;
+  }
+
+  .coffee-img {
+    grid-area:
+      coffee-img;
+    margin-left: 30px;
+    align-self: center;
+  }
+}
