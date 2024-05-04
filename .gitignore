@@ -1,6 +1,9 @@
 .DS_Store
 /connect
-/limited/binaries
+/limited/linux
+/limited/mac
+/limited/silicon
+/limited/windows
 /stable
 /test
 obsolete/
